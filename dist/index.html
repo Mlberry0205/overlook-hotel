@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overlook</title>
-  <link rel="stylesheet" type="text/css" href="href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet"/">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet"/">
 </head>
 <body>
   <section class="home-view">
@@ -16,17 +14,20 @@
       <div class="imagecontainer">
         <!-- //add image! -->
       </div>
-      <div class="container">
+      <section class="login-in-container">
         <label for="username"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" id="'username" required>
+        <input tabindex="1" type="text" class="client-name-input" placeholder="Enter Username" id="'username" required>
         <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" id="password" required>
-      </div>
+        <input tabindex="2" type="password" class="client-password-input" placeholder="Enter Password" id="password" required>
+      </section>
       <div class="container" >
-        <button type="button" class="login-button">Login</button>
+        <button tabindex="3" type="button" class="login-button">Login</button>
       </div>
     </form>
   </section>
+  <!-- <section class="main-section">
+    <section class ="home-view-container hidden"></section>
+  </section> -->
   
   
   <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
