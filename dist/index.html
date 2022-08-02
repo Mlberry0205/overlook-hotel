@@ -4,10 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack Starter Kit</title>
+  <title>Overlook</title>
+  <link rel="stylesheet" type="text/css" href="href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet"/">
 </head>
 <body>
-  <img src="./images/turing-logo.png" alt="turing logo">
+  <section class="home-view">
+    <h1 class="welcome-page">Welcome to the Arctic Snow Hotel</h1>
+  </section>
+  <section class="login-view">
+    <form>
+      <div class="imagecontainer">
+        <!-- //add image! -->
+      </div>
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="'username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="password" required>
+      </div>
+      <div class="container" >
+        <button type="button" class="login-button">Login</button>
+      </div>
+    </form>
+  </section>
+  
   
   <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
   <script src="bundle.js"></script>
