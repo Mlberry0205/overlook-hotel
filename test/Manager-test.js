@@ -1,12 +1,20 @@
-import {expect} from 'chai';
-import Manager from "..src/Manager";
+import { expect } from 'chai';
+import Manager from '../src/classes/Manager';
 
 
-describe('Manager', () => {
-    let manager;
+// let 
+// let
 
 
-    beforeEach(() => {
+beforeEach(function() {
 
-    })
+
+});
+
+
+describe('', () => {
+    it('should be a function', function() {
+        expect(Ingredient).to.be.a('function');
+      })
+
 })

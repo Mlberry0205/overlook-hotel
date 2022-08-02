@@ -1,16 +1,20 @@
-import {expect} from 'chai'
-import Room from "../src/Room"
-
-import User from '../src/Client';
+import { expect } from 'chai';
+import Room from '../src/classes/Room';
 
 
-describe('Room', function () => {
-let room
-
-beforeEach(() => {
+// let 
+// let
 
 
-})
+beforeEach(function() {
 
+
+});
+
+
+describe('', () => {
+    it('should be a function', function() {
+        expect(Ingredient).to.be.a('function');
+      })
 
 })
