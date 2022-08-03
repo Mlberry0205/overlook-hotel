@@ -1,4 +1,8 @@
-
+class Manager {
+    constructor() {
+        
+    }
+}
 
 
 

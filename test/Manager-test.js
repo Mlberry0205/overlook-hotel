@@ -14,7 +14,7 @@ beforeEach(function() {
 
 describe('', () => {
     it('should be a function', function() {
-        expect(Ingredient).to.be.a('function');
+        expect(Manager).to.be.a('function');
       })
 
 })

@@ -26,4 +26,44 @@ const loginButton = document.querySelector('.login-button');
 // ############# Event Listeners #############
 
 window.addEventListener('load', getPromiseData);
-const loginButton.addEventListener('click', displayHomeView);
+loginButton.addEventListener('click', displayLoginView);
+
+
+// ############# Event Listeners #############
+
+function hide(elements) {
+    elements.forEach((element) => {
+        element.classList.add('hidden');
+    })
+}
+
+function show(elements) {
+    elements.forEach((element) => {
+        element.classList.remove('hidden');
+    })
+}
+
+
+function displayLoginView() {
+  hide([displayHomeView,
+
+])
+
+  show([loginButton,
+        clientUserNameInput,
+        clientPasswordInput,
+])
+}
+
+
+function displayHomeView() {
+hide([loginButton,
+    clientUserNameInput,
+    clientPasswordInput,
+
+])
+    
+show([
+])
+}
+
