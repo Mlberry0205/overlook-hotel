@@ -1,8 +1,8 @@
 // ############# Imports #############
 
 import './css/styles.css';
-import {fetchData} from './apiCalls';
-import Bookings from './classes/Bookings';
+//import {fetchData} from './apiCalls';
+import Booking from './classes/Booking';
 import Client from './classes/Client';
 import Room from './classes/Room';
 import Manager from './classes/Manager';
