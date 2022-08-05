@@ -15,51 +15,70 @@
       <div class="imagecontainer">
         <!-- //add image! -->
       </div>
-      <section class="login-in-container">
+      <section class="login-in-container" hidden>
         <p>Please Sign In</p>
         <label for="username"><b>Username</b></label>
         <input tabindex="1" type="text" class="client-name-input" placeholder="Enter Username" id="'username" required>
         <label for="password"><b>Password</b></label>
         <input tabindex="2" type="password" class="client-password-input" placeholder="Enter Password" id="password" required>
+        <div class="container" >
+          <button tabindex="3" type="button" class="login-button">Login</button>
+          <p class="hidden" id="login-error">Login Error. Please try again.</p>
+        </div>
       </section>
-      <div class="container" >
-        <button tabindex="3" type="button" class="login-button">Login</button>
-        <p class="hidden" id="login-error">Login Error. Please try again.</p>
-      </div>
     </form>
   </section>
 
 
 
   <!-----DASHBOARD VIEW-->
-  <main class="hidden" id="client-dashboard">
-    <nav class='nav-bar'>
-      <button class='nav-buttons hidden' id='book-room-button'>Book a Room</button>
-      <button tabindex="4" class='nav-buttons' id='cleint-bookings-button'>My bookings</button>
-      <button tabindex="5" class='nav-buttons' id='sign-out-button'>Sign Out</button>
-    </nav>
-    <form role='search-for-availability' class='form'>
-      <p>Please select a date to see availability.</p>
-      <input tabindex="6" type="date" id="client-calendar" name="date" value="calendar-availability">
-      <label for="client-calendar">Choose a Date</label>
+  <!-- <main class="hidden" id="client-dashboard"> -->
+  <main class="dash-board-view" id="client-dashboard">
+    <section class="nav-bar-container">
+      <nav class='nav-bar'>
+        <section class="nav-bar-container"></section>
+        <button class='nav-buttons' id='book-room-button'>Book a Room</button>
+        <button tabindex="4" class='nav-buttons' id='cleint-bookings-button'>My bookings</button>
+        <button tabindex="5" class='nav-buttons' id='sign-out-button'>Sign Out</button>
+        <form role='search-for-availability' class='form'>
+        <p>Please select a date to see availability.</p>
+        <input tabindex="6" type="date" id="client-calendar" name="date" value="calendar-availability">
+        <label for="client-calendar">Choose a Date</label>
+        </form>
+      </nav>
+  </section>
+  <section class="main-section">
+    <aside class="client-filter-container">
+      <form role='search'class='form'>
+        <p>Filter Rooms:</p>
+        <input tabindex="6" type='radio' id='filterBySingleRoom' name='choice' value='single-room'>
+        <label for='filterBySingle'>Single Room</label><br>
+        <input tabindex="7" type='radio' id='filterByJuniorRoom' name='choice' value='junior-room'>
+        <label for='filterByJuniorRoom'>Junior</label><br>
 
-    </form>
+        <input tabindex="8" type='radio' id='filterBySuiteRoom' name='choice' value='suite-room'>
+        <label for='filterBySuiteRoom'>Suite</label><br>
+        <input tabindex="9" type='radio' id='filterByResidentialRoom' name='choice' value='residential-room'>
+        <label for='filterByResidentialRoom'>Residential</label><br>
+        </form>
+      </aside>
+    <section class="available-rooms-container" id="available-rooms">
 
-  <aside class="client-filter-container">
-    <form role='search'class='form'>
-      <p>Filter Rooms:</p>
-      <input tabindex="6" type='radio' id='filterBySingleRoom' name='choice' value='single-room'>
-      <label for='filterBySingle'>Single Room</label><br>
-      <input tabindex="7" type='radio' id='filterByJuniorRoom' name='choice' value='junior-room'>
-      <label for='filterByJuniorRoom'>Junior</label><br>
-
-      <input tabindex="8" type='radio' id='filterBySuiteRoom' name='choice' value='suite-room'>
-      <label for='filterBySuiteRoom'>Suite</label><br>
-      <input tabindex="9" type='radio' id='filterByResidentialRoom' name='choice' value='residential-room'>
-      <label for='filterByResidentialRoom'>Residential</label><br>
-      </form>
-  </aside>
-                  
+      <!-- CLIENT BOOKING CONTAINER -->
+    <section class="client-booking-container">
+      <h3 id="user-bookings-title">Future and Past Bookings:</h3>
+      <h3 id="user-total-spent">Total Spent:</h3>
+      <div class='box-of-hotel-rooms center-container'>
+        <div tabindex="8" class='room-pic-box'></div>
+        <div tabindex="9" class='room-pic-box'></div>
+        <div tabindex="10" class='room-pic-box'></div>
+        <div tabindex="11" class='room-pic-box'></div>
+        <div tabindex="12" class='room-pic-box'></div>
+        <div tabindex="13" class='room-pic-box'></div>
+        <div tabindex="14" class='room-pic-box'></div>
+      </div>
+    </section>    
+  </section>   
 
   </main>
  
