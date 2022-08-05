@@ -11,18 +11,11 @@ class Booking {
 //should remove bookings when canceled
 //should remove booking when date passes
 
-
-
 //Client: 
 //should make bookings for rooms
 //should keep track of total spent on rooms
 //should move bookings to past bookings
 //should find all future bookings
-
-
-//Room:
-
-
 
 //Manager:
 //Should return array of available rooms
